@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Quiz sobre a empresa Mikcare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/logo.png" width="300px" height="300px" alt="">
+        <h1>Quiz</h1>
+        <button><a href="index.html">Início</a></button>
+        <button><a href="produtos.html">Produtos</a></button>
+        <button><a href="contato.html">Contato</a></button>
+    </header>
+
+    <main class="corpo">
+    <section class="quiz-section">
+
+        <h2 id="titulo">Quiz de Conhecimentos sobre a empresa Mikcare</h2>
+
+        <form id="quiz-form">
+            <section class="question">
+                <h3>1. Qual foi o ano de fundação da empresa?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()"> A) 2024 </label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()"> B) 2022 </label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()"> C) 2018 </label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()"> D) 2021 </label><br>
+            </section>
+
+            <section class="question">
+                <h3>2. Quem é o fundador(a) da marca?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()"> A) Gabriel Coutinho </label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()"> B) Vitória Gomes de Paula </label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()"> C) Isabela Santos </label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()"> D) Ana Clara Gouvêa </label><br>
+            </section>
+
+            <section class="question">
+                <h3>3. Qual é o principal ingrediente ativo utilizado no sérum?</h3>
+                <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()"> A) Ácido hialurônico  </label><br>
+                <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()"> B) Vitamina C </label><br>
+                <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()"> C) Retinol </label><br>
+                <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()"> D) Niacinamida </label><br>
+            </section>
+
+            <section class="question">
+                <h3>4. Quais tipos de produtos a empresa oferece? </h3>
+                <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()"> A) Tratamento capilar </label><br>
+                <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()"> B) Limpeza corporal</label><br>
+                <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()"> C) Hidratação facial</label><br>
+                <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()"> D) Depilação </label><br>
+            </section>
+
+            <section class="question">
+                <h3>5. Qual desses é uma mentira sobre os produtos da Mikcare?</h3>
+                <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()"> A) O protetor solar evita rugas </label><br>
+                <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()"> B) Não é necessário hidratar pele oleosa </label><br>
+                <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()"> C) Limpar a pele todos os dias faz bem </label><br>
+                <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()"> D) Devemos usar produtos específicos para cada tipo de pele </label><br>
+            </section>
+
+            <section class="question">
+                <h3>6. A marca realiza testes em animais?h3>
+                <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()"> A) Não! </label><br>
+                <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()"> B) Com certeza não! </label><br>
+                <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()"> C) Sim! </label><br>
+                <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()"> D) Com certeza sim1 </label><br>
+            </section>
+
+            <section class="question">
+                <h3>7. Qual foi o produto mais vendido da empresa em 2024?</h3>
+                <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()"> A) Sérum </label><br>
+                <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()"> B) Hidratante facial </label><br>
+                <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()"> C) Tônico </label><br>
+                <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()"> D) Esfoliante </label><br>
+            </section>
+
+            <section class="question">
+                <h3>8. Quais são os valores centrais da marca em relação ao cuidado com a pele?</h3>
+                <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()"> A) Cuidados </label><br>
+                <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()"> B) Beleza </label><br>
+                <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()"> C) Saúde </label><br>
+                <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()"> D) Mudança </label><br>
+            </section>
+
+            <section class="question">
+                <h3>9. Qual produto NÃO aparece no site?</h3>
+                <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()"> A) Sérum </label><br>
+                <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()"> B) Hidratante </label><br>
+                <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()"> C) Lenços demaquilantes </label><br>
+                <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()"> D) Sabonete  </label><br>
+            </section>
+
+            <section class="question">
+                <h3>10. Qual dessas NÃO é uma máscara de skincare?</h3>
+                <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()"> A) Argila </label><br>
+                <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()"> B) Para os olhos </label><br>
+                <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()"> C) Golden Masks </label><br>
+                <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()"> D) Máscara de terra </label><br>
+            </section>
+
+            <button class="botao_enviar" id="enviarBtn" type="button" onclick="submitQuiz()"> Enviar Respostas </button>
+
+            <button class="botao_refazer" id="resetBtn" type="button" onclick="resetQuiz()" disabled> Responder Novamente </button>
+        </form>
+
+        <audio id="venceusom" src="vídeo_e_áudio/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="vídeo_e_áudio/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="vídeo_e_áudio/perdeu.mp3" preload="auto"></audio>
+
+        <section id="result"></section>
+
+    </section>
+</main>
+
+    <footer>Site desenvolvido pela empresa <a target="_blank" href="https://www.instagram.com/_mik4.wttx/">Mikcare</a></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

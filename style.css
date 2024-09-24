@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap');
+
+
+:root{
+    --fontePadrao: "PT Serif", serif;
+    --fonteTitulos: "Oswald", sans-serif;
+    --color1: #cdbef2;
+    --color2: #dacef5;
+    --color3:#e6dff9;
+    --color4: #f3effc;
+    --color5: #ffffff;
+    --color-gradiente: linear-gradient(90deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5));
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: var(--fontePadrao);
+}
+
+header{
+    background-image: var(--color-gradiente);
+    text-align: center;
+    
+}
+
+header h1{
+    text-align: center;
+    font-family: var(--fonteTitulos);
+    font-size: 4vw;
+    color: #705aaa;
+    text-transform: uppercase;
+}
+
+header button{
+    text-align: center;
+    background-color:#8b7bb8;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    transition: 1.5s;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.499);
+    /* margin-left:40px ; */
+}
+
+header a{
+    text-decoration: none;
+}
+
+header button:hover{
+    transform: scale(1.1);
+    background-color: #b7a9dc;
+}
+
+main.centralizador{
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+mark{
+    background-color: #9c87d08e;
+    color: white;
+    padding: 2px 4px 4px;
+}
+
+section{
+    background-image:var(--color-gradiente);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right:10px ;
+}
+
+section h2{
+    font-size: 2.5vw;
+    color:#654f9e;
+    text-align: center;
+}
+
+section p{
+    font-family: var(--fontePadrao);
+    font-size: 1.5vw;
+    line-height: 1.5em;
+}
+
+
+section#img1{
+    background-image: url(imagens/skincare_img1.webp);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section#img2{
+    background-image: url(imagens/skincare_img2.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section#img3{
+    background-image: url(imagens/skincare_img3.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    /* color: #5f4b91; */
+    color: black;
+}
+
+a p{
+    font-family: var(--fontePadrao);
+}
+
+a h2{
+    font-family: var(--fonteTitulos);
+}
+
+footer{
+    background-image:var(--color-gradiente);
+    color: #654f9e;
+    text-align: center;
+    padding: 5px 5px 5px;
+    margin-top: 10px;
+}
+
+footer a{
+    color: #654f9e;
+
+}
+
+/* pag2 */
+
+header.titulo{
+    background-image: var(--color-gradiente);
+    text-align: center;
+}
+
+header.titulo, h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--fonteTitulos);
+    font-size: 2vw;
+    color: #705aaa;
+    text-transform: uppercase;
+}
+
+header.titulo, button{
+    text-align: center;
+    background-color:#8b7bb8;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    transition: 1.5s;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.499);
+}
+
+
+
+section h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: var(--fonteTitulos);
+    font-size: 2vw;
+    color: #705aaa;
+    text-transform: uppercase;
+}
+
+section.sobre_mascara, p{
+    text-align:center;
+    font-family: var(--fontePadrao);
+    margin-bottom: 10px;
+}
+
+.quadrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2px;
+}
+
+.quadrado img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .quadrado a{
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 800px) {
+    .quadrado a{
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .quadrado a{
+        flex: 1 1 100%;
+    }
+}
+
+/* pag3 */
+
+
+header.titulo_contato{
+    background-image: var(--color-gradiente);
+    text-align: center;
+}
+
+header.titulo_contato, h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--fonteTitulos);
+    font-size: 2vw;
+    color: #705aaa;
+    text-transform: uppercase;
+}
+
+header.titulo_contato, button{
+    text-align: center;
+    background-color:#8b7bb8;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    transition: 1.5s;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.499);
+}
+
+.cadastro{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+#email{
+    width: 98%;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #654f9e;
+    background-color: #cdbef2;
+    color: rgb(255, 255, 255);
+    transition: 1.5s;
+}
+
+body#form{
+    font-family:var(--fontePadrao);
+    margin: 0;
+    padding: 0;
+    background-color: #e3ccd5; 
+    color: #e3ccd5;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color:#654f9e;
+}
+
+.caixa_texto{
+    width: 570px;
+    height: 100px;
+    margin: 10px;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #705aaa;
+    background-color:#cdbef2;
+}
+
+input[type="text"]:hover,
+select {
+    background-color: rgb(255, 255, 255);
+    transition: 1.5s;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+#formas_de_contato{
+    background-image:var(--color-gradiente);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    color:#654f9e;
+}
+
+#botao{
+    text-align: center;
+    background-color:#8b7bb8;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3vw;
+    transition: 1.5s;
+    padding: 5px 40px 5px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 240px;
+    margin-right: 20px;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.499);
+}
+
+#botao:hover{
+    background-color:#7f6dae;
+}
+
+header video{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+audio{
+    width: 0;
+}
+
+
+
+
+
+/* quiz */
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400vh;
+    margin: 300px;
+}
+
+header.cima{
+    background-image: var(--color-gradiente);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.cima, button{
+    text-align: center;
+    background-color:#e6dff9;
+    font-family: var(--fontePadrao);
+    border: none;
+    font-size: 1.3vw;
+    transition: 1.5s;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+
+.quiz-section{
+    background-color:#cdbef2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+
+#titulo{
+    font-family:var(--fonteTitulos);
+    text-align: center;
+    font-size: 1.6em;
+    color: #57418f;
+}
+
+h3{
+    font-size: 1.2em;
+    color: #584488;
+    margin-bottom: 10px;
+}
+
+.question{
+    margin-bottom: 20px;
+}
+
+.botao_refazer, .botao_enviar{
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #b7a9dc;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+
+.botao_enviar:hover{
+    background-color:#7f6dae;
+}
+
+button:disabled{
+    background-color: rgb(114, 118, 137);
+    cursor: not-allowed;
+}
+
+
+#result{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
